@@ -13,12 +13,14 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2",
-    "@cap-js/cds-types": "^0.13.0"
+    "@cap-js/cds-test": "^0.4.0",
+    "@cap-js/cds-types": "^0.13.0",
+    "@cap-js/sqlite": "^2"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false",
+    "test": "npx jest tests/test.js"
   },
   "cds": {
     "requires": {
